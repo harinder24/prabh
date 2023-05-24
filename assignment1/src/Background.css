@@ -1,0 +1,155 @@
+#background{
+  width: 100%;
+  overflow: hidden;
+  
+  height: 100vh;
+  position: absolute;
+  animation: kf-color-mix 10s linear infinite alternate;
+  background: radial-gradient(circle at bottom, currentColor 0, black 100%);
+
+}
+@keyframes kf-color-mix {
+  0% { color: navy }
+  25% { color:  #312e81 }
+  50% { color:  #4c1d95 }
+  75% { color: #581c87 }
+  100% { color:  #701a75 }
+
+}
+
+#background.colorChange {
+  background: radial-gradient(circle at bottom, purple 0, black 100%);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.space {
+    background:  center / 200px 200px round;
+    
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  @keyframes space {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .stars1 {
+    animation: space 180s linear infinite;
+
+    background-image:
+      radial-gradient(
+        1px 1px at 25px 5px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1px 1px at 50px 25px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1px 1px at 125px 20px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1.5px 1.5px at 50px 75px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        2px 2px at 15px 125px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        2.5px 2.5px at 110px 80px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      );
+      /* transform: rotate(100deg); 
+      transform-origin: center */
+  }
+  .stars2 {
+    animation: space 240s linear infinite;
+
+    background-image:
+      radial-gradient(
+        1px 1px at 75px 125px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1px 1px at 100px 75px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1.5px 1.5px at 199px 100px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        2px 2px at 20px 50px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        2.5px 2.5px at 100px 5px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        2.5px 2.5px at 5px 5px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      );
+      /* transform: rotate(30deg); 
+    transform-origin: center */
+  }
+  .stars3 {
+    animation: space 300s linear infinite;
+
+    background-image:
+      radial-gradient(
+        1px 1px at 10px 10px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1px 1px at 150px 150px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1.5px 1.5px at 60px 170px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        1.5px 1.5px at 175px 180px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        2px 2px at 195px 95px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      ),
+      radial-gradient(
+        2.5px 2.5px at 95px 145px, 
+        white, 
+        rgba(255, 255, 255, 0)
+      );
+    
+  }
+  

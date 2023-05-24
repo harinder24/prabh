@@ -1,0 +1,30 @@
+.team_wrapper{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    max-height: -webkit-fill-available;
+    top: 0;
+    left: 0;
+  
+    
+
+    position: absolute;
+
+   
+    color: gray;
+      
+    font-size: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px ;
+    column-gap: 50px;
+    
+    justify-content: space-evenly;
+    
+   overflow: auto;
+   scroll-behavior: smooth;
+
+}
+::-webkit-scrollbar { 
+    display: none; 
+    }
