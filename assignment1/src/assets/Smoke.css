@@ -1,0 +1,29 @@
+.smoke_images{
+ width: 2000px;
+
+ opacity: 0.8;
+ position: absolute;
+ animation: smoke_animation 180s linear infinite;
+}
+.smoke_images_wrapper{
+    width: 100%;
+    height: -webkit-fill-available;
+    top: 0;
+    left: 0;
+  
+    
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+@keyframes smoke_animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
