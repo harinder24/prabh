@@ -1,7 +1,6 @@
 #background{
   width: 100%;
   overflow: hidden;
-  
   height: 100vh;
   position: absolute;
   animation: kf-color-mix 10s linear infinite alternate;
