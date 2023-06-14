@@ -16,8 +16,8 @@ function App() {
   <Routes>
    
         <Route path="/" element={<Countries/>} />
-        <Route path="/:id" element={<Country/>} />
-    
+        <Route path="/*" element={<Country/>} />
+        
     </Routes>
     </BrowserRouter>
   
