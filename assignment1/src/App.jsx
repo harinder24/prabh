@@ -1,6 +1,4 @@
 
-
-
 import './App.css'
 import Background from './Background'
 import TeamMember from './assets/TeamMember'

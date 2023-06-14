@@ -1,0 +1,25 @@
+#Country_wrapper{
+    position: absolute;
+    height: 100svh;
+    width: 100%;
+    overflow: auto;
+    font-size: x-large;
+    font-weight: 600;
+    
+    
+}
+.display_flex{
+    display: flex;
+    justify-content: space-between;
+}
+#cImage{
+    max-width: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+@media (max-width: 650px) {
+    #Country_wrapper{
+        font-size: medium;
+    }
+  }
+  

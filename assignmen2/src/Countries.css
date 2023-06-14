@@ -1,0 +1,48 @@
+#Countries_wrapper{
+
+    position: absolute;
+    height: 100svh;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    column-gap: 50px;
+    
+    justify-content: space-evenly;
+}
+::-webkit-scrollbar { 
+    display: none; 
+    }
+
+    .card_wrapper{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 200px;
+        min-height: 220px;
+        padding: 15px;
+        background-color: rgba(128, 128, 128, 0.7);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 2px solid black;
+
+
+    }
+    .card_info{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 20px;
+    }
+    .card_img{
+        max-width: 200px;
+        height: 150px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+    .card_link{
+        text-decoration: none;
+        color: black;
+    }
