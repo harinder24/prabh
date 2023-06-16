@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import './Countries.css'
+import { useNavigate } from 'react-router-dom';
 
 export default function Countries() {
     const [country, setCountry] = useState([]);
@@ -10,7 +11,11 @@ export default function Countries() {
       .then((response) => response.json())
       .then((data) => setCountry(data));
   }, []);
+  const navigate = useNavigate();
 
+    function handleClick(event) {
+        navigate("/" + event.target.id);
+    }
   return (
     <div id='Countries_wrapper'>
         {country.map((cnty) => (
@@ -18,7 +23,7 @@ export default function Countries() {
             <img className='card_img' src={cnty.flags.png} alt="" />
             <div className='card_info'>
                 <h4>{cnty.name.common}</h4>
-                <a className='card_link' href={"/"+cnty.name.common}>More</a>
+                <div className='card_link' id={cnty.name.common} onClick={handleClick}>More</div>
             </div>
           </div>
         ))}
