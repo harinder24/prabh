@@ -3,7 +3,6 @@ import { useContext } from 'react';
 import PhotoContext from './photoContext';
 import './PhotoList.css'
 import { Link } from 'react-router-dom';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 
 export default function PhotoList() {
 const { photosData } = useContext(PhotoContext);
