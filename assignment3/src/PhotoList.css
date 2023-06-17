@@ -39,3 +39,11 @@
     all: unset;
     cursor: pointer;
 }
+.heart{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
