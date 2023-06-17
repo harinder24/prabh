@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 import PhotoList from './PhotoList';
 import PhotoContext from './photoContext';
+import Favourite from './Favourite';
 function App() {
   const secret = `9Ux7_YQRfMyBDYtKwwk1_O_26JWCJvQgMEg7RQoyhFE`
 
@@ -35,7 +37,12 @@ function App() {
         setPhotosData,
       }}
     >
-      <PhotoList />
+      <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<PhotoList/>} />
+      <Route path="/favorite" element={<Favourite/>} />
+      </Routes>
+      </BrowserRouter>
     </PhotoContext.Provider>
 
   )
