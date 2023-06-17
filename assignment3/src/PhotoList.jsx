@@ -37,7 +37,7 @@ export function PhotoCard({data}) {
       >
         <div style={{position: 'relative'}}>
         <img className='photo_img' src={data.image} />
-        <FavoriteIcon onClick={handleAddFav} style={{color: data.isFavorite ? `red` : `#e2e2e2ee`, position:"absolute", top: "0", right:'2', cursor: "pointer"}}></FavoriteIcon>
+        <FavoriteIcon data-netlify="true" onClick={handleAddFav} style={{color: data.isFavorite ? `red` : `#e2e2e2ee`, position:"absolute", top: "0", right:'2', cursor: "pointer"}}></FavoriteIcon>
         </div>
         
         <p>{data.description}</p>
