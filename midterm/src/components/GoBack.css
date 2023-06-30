@@ -1,0 +1,32 @@
+.goBackHeader{
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: -webkit-fill-available;
+    padding: 0px 24px;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e4e4;
+    z-index: 100;
+}
+.goBackNav{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bbc2{
+    height: 42px;
+    opacity: 0.4;
+}
+.bbc2:hover{
+    opacity: 1;
+}
+.ArrowBackIosNewIcon{
+    color: gray;
+}
+.ArrowBackIosNewIcon:hover{
+    color: black;
+    cursor: pointer;
+}

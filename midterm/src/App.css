@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:  #f3f2ef;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: default;
+    caret-color: transparent;
+}
+.bcblack{
+    background-color: black;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+    }

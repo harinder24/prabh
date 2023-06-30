@@ -1,0 +1,68 @@
+#SavedCardWrapperWrapper{
+    height: calc(100svh - 53px);
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    overflow: auto;
+}
+#SavedPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SavedCardWrapper{
+    width: 800px;
+    min-height: 120px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    cursor: pointer;
+   
+}
+.SavedCard{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.SavedBookmarkIcon{
+    cursor: pointer;
+}
+.SavedCard_img{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.SavedCard_Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px;
+    width: calc(100% - 110px);
+}
+.SavedCard__time__icon{
+    display: flex;
+    justify-content: space-between;
+}
+.SavedCard_Content_title{
+    font-size: larger;
+    font-weight: 500;
+}
+.SavedCard__time{
+    font-size: medium;
+    color: gray;
+}
+
+
+@media only screen and (max-width: 800px){
+    .SavedCardWrapper{
+        width: auto
+    }
+}

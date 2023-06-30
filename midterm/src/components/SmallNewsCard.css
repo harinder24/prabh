@@ -1,0 +1,35 @@
+
+.cardWrapper{
+    padding: 7px 0px;
+    display: flex;
+    
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+
+  }
+  .cardImages{
+    width: 75px !important;
+    height: 75px !important;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .cradInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cradInfo :first-child{
+    color:black;
+  }
+  .cradInfo :last-child{
+    color: gray;
+    font-size: smaller;
+  }
+
+  @media only screen and (max-width: 900px){
+    .cardWrapper{
+
+        width: inherit;
+      }
+  }

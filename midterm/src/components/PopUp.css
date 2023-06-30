@@ -1,0 +1,42 @@
+
+#popUpBox{
+    width: 250px;
+    height: 175px;
+    background-color: #e3e2e2;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+#CloseIcon{
+    color: gray ;
+}
+#CloseIcon:hover{
+    cursor: pointer;
+    color: black;
+}
+#popUpBoxBtn{
+    background-color: #f3f2ef;
+    color: gray;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: large;
+    border: 2px solid gray;
+}
+#popUpBoxBtn:hover{
+    cursor: pointer;
+    background-color: gray;
+    color: #f3f2ef;
+    border: 2px solid #f3f2ef;
+}
+
+#popUp{
+    background-color: rgba(0, 0, 0, 0.5);
+
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
